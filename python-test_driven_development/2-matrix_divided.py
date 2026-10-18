@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ This script divides each number in a matrix by the given number"""
 
+
 def matrix_divided(matrix, div):
     """
     Function that divides each number in a matrix by the given number.
