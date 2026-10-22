@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """class Square that defines a square based on 1,2,3-square.py"""
+
+
 class Square:
     """ attributes for __size(int)"""
 
@@ -9,13 +11,13 @@ class Square:
 
     def area(self):
         """Calculates and return the area value of square"""
-        return self.__size ** 2    
-    
+        return self.__size ** 2
+
     @property
     def size(self):
         """Gather for the size attribute"""
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """Setter for the size attribute with validation"""
