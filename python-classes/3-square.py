@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""class Square that defines a square based on 2-square.py"""
+"""Square class with private class attribute"""
 
 
 class Square:
