@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Square class with private class attribute"""
+"""class Square that defines a square based on 1-square.py"""
 
 
 class Square:
@@ -12,5 +12,4 @@ class Square:
         self.__size = size
 
     def area(self):
-        """Calculates the area of a square"""
         return self.__size ** 2
