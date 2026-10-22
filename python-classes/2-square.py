@@ -1,10 +1,9 @@
-#!/usr/bin/python3  
+#!/usr/bin/python3
 """class Square that defines a square based on 1-square.py"""
 
 
 class Square:
     """private class attribute"""
-    
     def __init__(self, size=0):
         """Init a square with size validation"""
         if not isinstance(size, int):
