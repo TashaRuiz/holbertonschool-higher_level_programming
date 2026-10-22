@@ -9,6 +9,10 @@ class Square:
         """Initializes a Square instance with size validation"""
         self.size = size
 
+    def area(self):
+        """Calculates and return the area value of square"""
+        return self.__size ** 2
+
     def size(self):
         """Gather for the size attribute"""
         return self.__size
@@ -20,7 +24,3 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-
-    def area(self):
-        """Calculates and return the area value of square"""
-        return self.__size ** 2
