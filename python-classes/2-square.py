@@ -3,6 +3,8 @@
 
 
 class Square:
+    """private class attribute"""
+    
     def __init__(self, size=0):
         """Init a square with size validation"""
         if not isinstance(size, int):
