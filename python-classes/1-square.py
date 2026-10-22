@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Private instance attribute: size, Instantiation with size (no type/value verification)"""
+"""Private instance attribute: size, Instantiation with size"""
 
 
 class Square:
