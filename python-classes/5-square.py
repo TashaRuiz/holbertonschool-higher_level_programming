@@ -33,5 +33,6 @@ class Square:
             print()
         else:
             for innerindex in range(self.__size):
-                print("#" * self.__size, end="")
-            print()
+                for innerindex in range(self.__size):
+                    print("#", end="")
+                print()
