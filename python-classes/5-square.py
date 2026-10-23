@@ -23,15 +23,15 @@ class Square:
         """Setter for the size attribute with validation"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
     def my_print(self):
         """Prints a square using the '#' character based on its size"""
-        if self.__size != 0:
-            for innerindex in range(self.__size):
-                print("#", end="")
+        if self.__size == 0:
             print()
         else:
+            for innerindex in range(self.__size):
+                print("#" * self.__size, end="")
             print()
