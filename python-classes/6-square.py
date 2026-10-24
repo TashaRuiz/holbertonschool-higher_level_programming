@@ -48,6 +48,7 @@ class Square:
         """Prints a square using the '#' character based on its size"""
         if self.__size == 0:
             print()
+            return
         else:
             for innerindex in range(self.__position[1]):
                 for innerindex in range(self.__size):
