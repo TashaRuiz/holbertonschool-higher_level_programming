@@ -15,12 +15,13 @@ class Rectangle():
         height (int): The height of the rectangle (must be >= 0).
     """
     number_of_instances = 0
-    
+
     def __init__(self, width=0, height=0):
         """ Initializes a rectangle instance with optional width and height.
         """
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
