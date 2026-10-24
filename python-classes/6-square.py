@@ -13,10 +13,6 @@ class Square:
         self.size = size
         self.position = position
 
-    def area(self):
-        """Calculates and return the area value of square"""
-        return self.__size ** 2
-
     @property
     def size(self):
         """Gather for the size attribute"""
@@ -43,6 +39,10 @@ class Square:
         if not all(isinstance(num,int) and num >= 0 for num in value):
             raise TypeError('error')
         self.__position = value
+
+    def area(self):
+        """Calculates and return the area value of square"""
+        return self.__size ** 2
 
     def my_print(self):
         """Prints a square using the '#' character based on its size"""
