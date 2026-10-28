@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-
+"""
+This module defines a class `MyList` that inherits from
+the built-in list class.
+It includes a public instance method `print_sorted` to print
+the list elements in ascending sorted order.
+"""
 
 class MyList(list):
     """
