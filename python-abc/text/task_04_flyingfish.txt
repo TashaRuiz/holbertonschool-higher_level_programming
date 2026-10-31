@@ -1,0 +1,44 @@
+The main code: main_04_flyingfish.py 
+==================================
+
+#!/usr/bin/env python3
+from task_04_flyingfish import Fish, FlyingFish
+
+flying_fish = FlyingFish()
+flying_fish.swim()
+flying_fish.fly()
+flying_fish.habitat()
+
+$ ./main_04_flyingfish.py 
+The flying fish is swimming!
+The flying fish is soaring!
+The flying fish lives both in water and the sky!
+---------------------------------------------------------------
+
+
+The Instructions
+==========================================
+
+Background:
+In some object-oriented languages, a class can inherit attributes and behaviors from more than one parent class. This is known as multiple inheritance. Python is one of the languages that supports multiple inheritance, which can be a powerful tool, but it also comes with complexities, particularly regarding method resolution order (MRO).
+
+Objective:
+Construct a FlyingFish class that inherits from both a Fish class and a Bird class. Within FlyingFish, override methods from both parents. The goal is to comprehend multiple inheritance and how Python determines method resolution order.
+
+Instructions:
+Parent Classes Setup:
+Create a Fish class with methods swim (which prints "The fish is swimming") and habitat (which prints "The fish lives in water").
+Create a Bird class with methods fly (which prints "The bird is flying") and habitat (which prints "The bird lives in the sky").
+Implementing FlyingFish:
+Construct a FlyingFish class that inherits from both Fish and Bird.
+Override the fly method to print "The flying fish is soaring!".
+Override the swim method to print "The flying fish is swimming!".
+Override the habitat method to print "The flying fish lives both in water and the sky!".
+Testing and MRO Exploration:
+Instantiate an object of the FlyingFish class.
+Call the fly, swim, and habitat methods and observe the outputs.
+Use the mro() method or the .__mro__ attribute on the FlyingFish class to investigate the method resolution order. For instance, print(FlyingFish.mro()).
+Hints:
+
+Consider the order in which you list the parent classes when defining FlyingFish. It affects the method resolution order.
+While multiple inheritance can be a powerful tool, it should be used judiciously, as it can make the code more complex and harder to read.
