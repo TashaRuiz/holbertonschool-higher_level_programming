@@ -1,0 +1,42 @@
+The main code: main_05_dragon.py 
+==================================
+
+$ cat main_05_dragon.py 
+#!/usr/bin/env python3
+from task_05_dragon import Dragon
+
+dragon = Dragon()
+dragon.swim()  # Outputs: The creature swims!
+dragon.fly()   # Outputs: The creature flies!
+dragon.roar()  # Outputs: The dragon roars!
+
+$ ./main_05_dragon.py 
+The creature swims!
+The creature flies!
+The dragon roars!
+---------------------------------------------------------------
+
+
+The Instructions
+==========================================
+
+Background:
+Mixins are a way to add functionality to classes in a modular fashion. They're not meant to stand alone but are meant to be combined with other classes to add behaviors. By using mixins, you can compose behaviors in classes without the need for deep or rigid inheritance hierarchies.
+
+Objective:
+Design two mixin classes, SwimMixin and FlyMixin, each equipped with methods swim and fly respectively. Next, construct a class Dragon that inherits from both these mixins. Your aim is to show that a Dragon instance can both swim and fly.
+
+Instructions:
+Creating Mixins:
+Design a mixin called SwimMixin with a method swim that prints "The creature swims!".
+Design another mixin called FlyMixin with a method fly that prints "The creature flies!".
+Implementing Dragon:
+Construct a class named Dragon that inherits from both SwimMixin and FlyMixin.
+Within the Dragon class, you can add additional methods or attributes if desired, such as roar, which could print "The dragon roars!".
+Testing the Dragon's Abilities:
+Instantiate an object of the Dragon class named draco.
+Demonstrate draco's abilities by calling the swim, fly, and (if implemented) roar methods.
+Hints:
+
+While designing mixins, remember that they should be focused, providing a single piece of functionality. They shouldn't be overly broad or try to manage too much behavior.
+Mixins allow for code reusability and can be combined in various ways to give objects different capabilities without setting up complex inheritance hierarchies.
