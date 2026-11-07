@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module that reads a text file (UTF8) and prints it to stdout"""
 
+
 class Student:
     """Class representing a student"""
     def __init__(self, first_name, last_name, age):
