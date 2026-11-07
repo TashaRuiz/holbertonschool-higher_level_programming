@@ -18,5 +18,5 @@ def load_and_deserialize(filename):
 
     Args:
         filename: The name of the file to load the JSON data from."""
-    with open(filename, r, encoding="utf-8") as jsonfile:
+    with open(filename, 'r', encoding="utf-8") as jsonfile:
         return json.load(jsonfile)
