@@ -4,6 +4,7 @@
 
 ## 1. Differences between HTTP and HTTPS
 **HTTP (Hypertext Transfer Protocol)** is the basic protocol that allows browsers (clients) to request resources from web servers and receive responses. Data travels in **plain text**.
+
 **HTTPS (HTTP Secure)** is the same protocol with an added security layer using **SSL/TLS encryption**.
 
 ### Main differences (focusing on security):
