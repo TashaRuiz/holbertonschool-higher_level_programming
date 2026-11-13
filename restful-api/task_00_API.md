@@ -90,12 +90,14 @@ Status codes are grouped by the first digit:
    * **4xx** → Client error
    * **5xx** → Server error
 
-**Status Code**                     **Description**                                                        **Scenario / When you might see it**
-200 OK                          Request succeeded                                                  Successfully loading a webpage or receiving API data
-301 Moved Permanently           Resource has a new permanent URL                                   Website redirects from old URL to a new one (SEO-friendly)
-404 Not Found                   Requested resource does not exist                                  Typing a wrong URL or requesting a deleted page
-500 Internal Server Error       Server encountered an unexpected error                             Bug in the server code or misconfigured server
-403 Forbidden                   Server understood the request but refuses to authorize it          Trying to access a restricted page without permission
+
+| **Status Code**           | **Description**                                            | **Scenario / When you might see it**                       |
+|---------------------------|------------------------------------------------------------|------------------------------------------------------------|
+| 200 OK                    | Request succeeded                                          | Successfully loading a webpage or receiving API data       |
+| 301 Moved Permanently     | Resource has a new permanent URL                           | Website redirects from old URL to a new one (SEO-friendly) |
+| 404 Not Found             | Requested resource does not exist                          | Typing a wrong URL or requesting a deleted page            |
+| 500 Internal Server Error | Server encountered an unexpected error                     | Bug in the server code or misconfigured server             |
+| 403 Forbidden             | Server understood the request but refuses to authorize it  | Trying to access a restricted page without permission      |
 
 ### Extra useful ones:
 * **201 Created** → Resource successfully created (common after POST)
