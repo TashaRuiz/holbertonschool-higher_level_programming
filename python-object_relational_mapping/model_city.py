@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""First state model"""
+"""
+Defines a City model.
+Inherits from SQLAlchemy Base and links to the MySQL table cities.
+"""
 from sqlalchemy import Column, ForeignKey, Integer, String
 from model_state import Base
 
