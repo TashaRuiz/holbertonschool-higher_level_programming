@@ -1,13 +1,22 @@
 #!/usr/bin/python3
-"""City model"""
-from sqlalchemy import Column, Integer, String, ForeignKey
-from sqlalchemy.ext.declarative import declarative_base
+"""Fetches cities from database"""
+from model_state import Base, State
+from model_city import City
+import sys
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 
-Base = declarative_base()
 
+if __name__ == "__main__":
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
+                           .format(sys.argv[1], sys.argv[2], sys.argv[3]),
+                           pool_pre_ping=True)
+    Session = sessionmaker(bind=engine)
+    session = Session()
 
-class City(Base):
-    __tablename__ = "cities"
-    id = Column(Integer, primary_key=True)
-    name = Column(String(128), nullable=False)
-    state_id = Column(Integer, ForeignKey("states.id"), nullable=False)
+    for city, state in session.query(City, State)\
+                              .filter(City.state_id == State.id)\
+                              .order_by(City.id):
+        print("{}: ({}) {}".format(state.name, city.id, city.name))
+
+    session.close()
